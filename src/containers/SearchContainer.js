@@ -14,7 +14,9 @@ import handleSearchChange from '../actions/search.js';
 // export default SearchContainer;
 
 const mapStateToProps = (state) => {
-    return {value: state.value};
+    return {
+        value: state.value
+    };
 };
 
 const mapDispatchToProps = (dispatch) => {
@@ -25,3 +27,4 @@ const mapDispatchToProps = (dispatch) => {
 
 
 export default connect(mapStateToProps, mapDispatchToProps)(Search);
+
